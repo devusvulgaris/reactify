@@ -1,0 +1,99 @@
+@import './scss/variables.scss';
+@import './scss/base.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Italic.ttf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+h3 {
+  color: $bartik-blue;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  display: flex;
+}
+
+#container {
+  .hui {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.app-content {
+  flex: 1;
+}
+
+.inner-content {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 25px auto;
+
+  input, textarea {
+    padding: 7px 5px;
+    margin-bottom: 20px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    color: $white;
+    background-color: $bartik-blue;
+    transition: background-color .3s ease-in;
+    border: 1px solid darken($bartik-blue, 10%);
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken($bartik-blue, 10%);
+    }
+  }
+}
+
+.app-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.app-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

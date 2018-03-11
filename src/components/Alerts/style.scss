@@ -1,0 +1,67 @@
+@import '../scss/variables';
+
+.alert {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+
+  &.error {
+    background-color: red;
+  }
+
+  &.success {
+    background-color: green;
+  }
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.dialog-footer {
+  margin-top: 25px;
+}
+
+button {
+  padding: 5px 10px;
+  color: $bartik-blue;
+  background-color: #d1d1d1;
+  transition: background-color .3s ease-in;
+  border: 1px solid darken($light-gray, 10%);
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($light-gray, 10%);
+  }
+}
+
+.action-btn {
+    padding: 5px 10px;
+    color: $white;
+    background-color: $bartik-blue;
+    transition: background-color .3s ease-in;
+    border: 1px solid darken($bartik-blue, 10%);
+    cursor: pointer;
+    border-radius: 5px;
+  margin-right: 10px;
+
+    &:hover {
+      background-color: darken($bartik-blue, 10%);
+    }
+}

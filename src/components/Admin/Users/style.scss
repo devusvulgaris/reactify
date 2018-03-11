@@ -1,0 +1,54 @@
+@import '../../scss/variables';
+
+.edit-content--form {
+  textarea {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content-list-section {
+  flex: 50% 0 0;
+}
+
+ .content-actions-section {
+  flex: 50% 0 0;
+}
+ .content-list {
+   width: 100%;
+ }
+
+ .action-btns {
+   display: flex;
+   margin-top: 25px;
+
+   button {
+     margin-right: 20px;
+   }
+ }
+
+ .admin-content-section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .add-content-section {
+   form {
+     input, textarea, select {
+       width: 100%;
+       box-sizing: border-box;
+       padding: 7px 5px;
+       margin-bottom: 20px;
+       border: 1px solid $light-gray;
+       border-radius: 5px;
+     }
+   }
+
+   textarea {
+     min-height: 200px;
+   }
+ }

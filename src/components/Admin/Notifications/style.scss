@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.notifications--container {
+  position: relative;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.5);
+  z-index: 2;
+  width: 300px;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.notification {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+
+  .close {
+    margin-left: auto;
+  }
+
+  &.success {
+    background-color: $success-color;
+  }
+}

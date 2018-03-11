@@ -1,0 +1,49 @@
+@import '../../scss/variables';
+
+
+.toasts-container {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 250px;
+}
+
+
+.toast {
+  //width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+
+  &.error {
+    background-color: red;
+  }
+
+  &.success {
+    background-color: rgba(green, 0.5);
+  }
+}
+
+.toast--content {
+  flex: 1 1 auto;
+  margin: 0 12px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .toast-icon {
+    margin-right: 10px;
+  }
+}
+
+.toast--dismiss {
+  flex: 0 0 auto;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+ // font-size: 1.1em;
+}

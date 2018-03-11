@@ -1,0 +1,41 @@
+@import '../../scss/variables.scss';
+
+.auth-header {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: $bartik-blue;
+}
+
+.auth-profile-nav {
+  margin-left: auto;
+
+  span {
+    margin-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    color: #ffffff;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+.auth-main-nav {
+  a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.auth--main {
+  background-color: rgba(#cccccc, 0.15);
+  padding-left: 50px;
+  padding-right: 50px;
+}

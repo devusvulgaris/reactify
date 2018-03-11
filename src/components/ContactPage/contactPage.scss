@@ -1,0 +1,29 @@
+@import '../scss/variables';
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 25px 0;
+
+  input, textarea {
+    padding: 7px 5px;
+    margin-bottom: 20px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    color: $white;
+    background-color: $bartik-blue;
+    transition: background-color .3s ease-in;
+    border: 1px solid darken($bartik-blue, 10%);
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken($bartik-blue, 10%);
+    }
+  }
+}

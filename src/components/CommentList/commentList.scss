@@ -1,0 +1,12 @@
+@import '../scss/variables';
+
+.comments--wrapper {
+  margin-top: 25px;
+}
+
+.comment {
+  background-color: $light-gray;
+  border-radius: $border-radius;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}

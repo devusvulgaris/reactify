@@ -6,7 +6,7 @@ import {loadContent} from "../../../AC";
 import Alert from '../../Alerts/Alert'
 
 import ContentList from './ContentList'
-import AddContentPage from "../AddContentPage";
+import AddContentPage from "./AddContent";
 import EditContentPage from "./EditContentPage";
 import ViewContent from "./ViewContentPage";
 

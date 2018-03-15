@@ -31,11 +31,9 @@ class AddContentPage extends Component {
 
   render() {
     const {content} = this.props
-    const message = this.props.content.message.text ? <Alert type={this.props.content.message.type} text={this.props.content.message.text}/> : null
 
     return(
         <div className="add-content-section">
-          {message}
           <h3>Add new content</h3>
           <form onSubmit={this.handleSubmit}>
             <label htmlFor="">Select type

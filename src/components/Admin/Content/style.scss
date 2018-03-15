@@ -12,7 +12,17 @@
 }
 
 .content-list-section {
-  flex: 50% 0 0;
+  flex: 1 1 0;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: $border-radius;
+  margin-right: 25px;
+}
+
+.content-actions-section {
+  flex: 1 1 0;
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
@@ -20,9 +30,6 @@
   border-radius: $border-radius;
 }
 
-.content-actions-section {
-  flex: 50% 0 0;
-}
 .content-list {
   width: 100%;
 }

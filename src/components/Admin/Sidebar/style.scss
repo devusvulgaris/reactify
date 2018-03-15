@@ -1,0 +1,56 @@
+@import '../../scss/variables';
+
+.auth--sidebar {
+  width: 250px;
+  padding: 5px 20px 20px;
+  background-color: #fff;
+
+  &.minified {
+   width: 60px;
+    padding: 5px 10px 20px;
+
+    span {
+      font-size: 1.5em;
+    }
+  }
+
+  &.dark-bg {
+    background-color: rgba(0,0,0,0.8);
+    span,
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+
+  .auth--branding {
+    display: flex;
+    //justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    img {
+      width: 30px;
+      height: auto;
+      margin-right: 10px;
+    }
+  }
+
+  span {
+    margin-right: 10px;
+    transition: font-size .3s ease-in-out;
+    color: $dark-gray;
+  }
+
+  a {
+    padding: 5px;
+    text-decoration: none;
+    color: $dark-gray;
+  }
+}
+

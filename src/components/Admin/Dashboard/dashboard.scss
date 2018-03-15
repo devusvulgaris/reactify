@@ -1,6 +1,11 @@
 @import '../../scss/variables.scss';
 
-.auth-header {
+.auth--layout-container {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.auth--header {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
@@ -8,7 +13,9 @@
 }
 
 .auth-profile-nav {
+  display: flex;
   margin-left: auto;
+  align-items: center;
 
   span {
     margin-left: 25px;
@@ -33,9 +40,15 @@
     color: #ffffff;
   }
 }
+.auth--main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
 
 .auth--main {
   background-color: rgba(#cccccc, 0.15);
   padding-left: 50px;
   padding-right: 50px;
+  flex: 1 1 auto;
 }

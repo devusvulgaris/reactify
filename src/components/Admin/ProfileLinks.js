@@ -4,7 +4,7 @@ import Logout from "./Logout"
 
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faUser, faBell } from '@fortawesome/fontawesome-free-solid'
+import { faUser, faTachometerAlt, faBell } from '@fortawesome/fontawesome-free-solid'
 
 import {logoutUser, toggleNotificationBar} from "../../AC/index";
 
@@ -31,7 +31,7 @@ class ProfileLinks extends Component {
           { isAuthenticated &&
           <div>
             <FontAwesomeIcon style={{'cursor': 'pointer'}} icon={faBell} onClick={() => this.handleNotificationBar()} />
-            <NavLink to = '/dashboard/profile'><FontAwesomeIcon icon={faUser} />Profile</NavLink>
+            <NavLink to = '/dashboard'><FontAwesomeIcon icon={faTachometerAlt} />Dashboard</NavLink>
             <Logout logoutClick = {() => dispatch(logoutUser())} />
           </div>
           }

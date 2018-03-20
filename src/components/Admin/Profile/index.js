@@ -18,7 +18,7 @@ console.warn(this.props.currentUser)
 
     const { name, field_city, user_picture, created } = this.props.currentUser.user
     return(
-        <div>
+        <div className="auth--profile">
           <img src={user_picture[0].url} alt={user_picture[0].alt} />
          <p>Name: {name[0].value}</p>
           <p>City: {field_city[0].value}</p>
